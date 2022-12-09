@@ -1,5 +1,13 @@
-from class_and_static_methods import Vector
+from property import Vector
 
-a = Vector(1, 8)
-a.set_coord(90 , 99)
-print(a.get_coord())
+a = Vector(2, 20)
+print(a.__dict__)
+
+res = a.x
+print(res)
+
+a.x = 13
+print(a.x)
+
+del a.x
+print(a.__dict__)
