@@ -1,5 +1,8 @@
 class Vector:
+    """Description"""
+
     def __init__(self, x, y):
+        print('вызов init')
         self.__x, self.__y = x, y
 
     @property
@@ -8,9 +11,9 @@ class Vector:
         return self.__x
 
     @x.setter
-    def x(self, arg):
+    def x(self, x):
         print('вызов setter')
-        self.__x = arg
+        self.__x = x
 
     @x.deleter
     def x(self):
